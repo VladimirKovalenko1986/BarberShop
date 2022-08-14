@@ -164,16 +164,41 @@
     <section>
       <!-- Скрытый слой - форма входа и карта -->
       <h2>Особистий кабінет</h2>
-      <p>Введіть свій логін і пароль</p>
-      <!-- Сдесь будет форма -->
-      <button type="button">Закрити</button>
-      <!-- Кнопка закрытия этого диалога -->
+      <form
+        class="user"
+        method="post"
+        action="https://developer.mozilla.org/ru/docs/Web/HTML/Element/ul"
+      >
+        <!-- Форма где будут собираться данные, данные будут отправляться по адрессу который мы указали  method="post отправляет
+        данные в закрытом виде есть еще метод  get отправляет данные в открытом виде-->
+        <p>
+          <label for="user-login">Логин</label>
+          <input id="user-login" type="text" name="login" placeholder="Логин" />
+        </p>
+        <p>
+          <label for="user-password">Пароль</label>
+          <input
+            id="user-password"
+            type="password"
+            name="password"
+            placeholder="Пароль"
+          />
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" name="remember" />
+            Запомни меня
+          </label>
+        </p>
+        <button type="submit">Войти</button>
+      </form>
     </section>
 
     <section>
       <!-- Скрытый слой -->
       <h2>Як до нас добратися!</h2>
       <button type="button">Закрити</button>
+      <!-- button форма отправки данных -->
     </section>
   </body>
 </html>
