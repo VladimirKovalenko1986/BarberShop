@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>барбершоп "Коваленко"</title>
+    <title>Барбершоп "Коваленко"</title>
   </head>
   <body>
     <header>
@@ -30,7 +30,11 @@
         </ul>
         <ul>
           <!-- Делаем отдельную кнопку выход -->
-          <li><button type="button">Вхід</button></li>
+          <li>
+            <a href="login.html">Вход</a>
+            <!-- Для нашей панели навигационной делаем отдельно 
+              открывающуюся ссылку для введения логина делая вход на другую страницу login.html-->
+          </li>
         </ul>
       </nav>
     </header>
@@ -131,7 +135,26 @@
           Вкажіть будь ласка бажану дату та час запису і ми зв'яжемось з вами
           для підтвердження бронювання, дякую!!!!
         </p>
-        <!-- Сдесь будет форма позже -->
+        <form action="#" method="post">
+          <!-- Добавляем сервак куда будет method="post" отправляться ваша заявка -->
+          <p>Дата <input type="date" name="date" value="2017-10-08" /></p>
+          <p>Час <input type="time" name="time" value="10:00" /></p>
+          <p>
+            Ваше ім'я
+            <input type="text" name="name" value="" placeholder="Борода" />
+          </p>
+          <p>
+            Телефон
+            <input
+              type="tel"
+              name="phone"
+              value=""
+              placeholder="+3 805 041-29-01"
+            />
+          </p>
+          <button type="submit">Відправити</button>
+        </form>
+        <!-- Добавлена офрма для заполненения и для обратной связи -->
       </section>
     </main>
 
@@ -191,6 +214,7 @@
           </label>
         </p>
         <button type="submit">Войти</button>
+        <!-- кнопка button с типом submit это кнопка которая оправляет заполненую форму -->
       </form>
     </section>
 
@@ -200,5 +224,87 @@
       <button type="button">Закрити</button>
       <!-- button форма отправки данных -->
     </section>
+
+    <!-- Создаем каталог -->
+    <section>
+      <h1>Каталог</h1>
+      <form action="filter" method="get" action="#">
+        <fieldset>
+          <!-- Поля границы -->
+          <legend>Випробник:</legend>
+          <!-- Для тега fieldset тег legend который добовляет заголовок,
+          если несколько полей следует заворачивать каждый в fieldset с заголовком legend -->
+          <ul>
+            <li>
+              <input
+                type="checkbox"
+                name="baxter-of-california"
+                id="filter-baxter-of-california"
+                checked
+              />
+              <!-- input
+                type="checkbox" квадратные кнопки и выбираем несколько вариантов-->
+              <label for="filter-baxter-of-califonia"
+                >Baxter of California</label
+              >
+            </li>
+            <li>
+              <input type="checkbox" name="mr-natty" id="filter-mr-natty" />
+              <label for="filter-mr-natty">Mr Natty</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                name="suavecito"
+                id="filter-suavecito"
+                checked
+              />
+              <!-- checked это выбор компонента после перезагрузки страницы
+             остается на том же элементе котроый мы задали  -->
+              <label for="filter-suavecito">Suavecito</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>Групи товарів</legend>
+          <ul>
+            <li>
+              <input
+                type="radio"
+                name="product-group"
+                value="shaving"
+                id="filter-shave"
+              />
+              <!-- input
+                type="radio" круглые кнопки и свойства выюрать только одну кнопку если имя одно и тоже как в input
+                type="radio" тогда нужно создавать value="" где в кавычка мы вписываем его индивидуальное имя, послеё
+                того как на сервер прийдет заказмы будем его различать именно по value="" где будет вписано индивидуальное имя-->
+              <label for="filter-shave">Приблуди для бриття</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="product-group"
+                value="hair-care"
+                id="filter-care"
+                checked
+              />
+              <label for="filter-care">Засоби для догляду</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="product-group"
+                value="accessories"
+                id="filter-accessories"
+              />
+              <label for="filter-accessories">Аксесуари</label>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+    </section>
+    <button type="submit">Показати</button>
   </body>
 </html>
