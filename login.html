@@ -14,12 +14,33 @@
         <form action="#" method="post">
           <!-- action вводится сылка сервера и method="post" прописывается для типа отправления -->
           <p>
-            <input type="email" name="login" placeholder="email@example.com" />
+            <label for="user-login">Логін</label>
+            <input
+              id="user-login"
+              type="email"
+              name="login"
+              placeholder="email@example.com"
+            />
             <!-- placeholder="email@example.com" вводим пример данных которыей нужноь ввести -->
           </p>
           <p>
-            <input type="password" name="password" placeholder="**********" />
+            <label for="user-password">Пароль</label>
+            <input
+              id="user-password"
+              type="password"
+              name="password"
+              placeholder="**********"
+            />
           </p>
+          <p>
+            <label>
+              <input type="checkbox" name="remenber" />Запам'ятати
+            </label>
+            <!-- Можно сделать как выже связаною а можно просто завернуть label -->
+            <a href="#">Я забув пароль!</a>
+            <!-- type="checkbox" будут квадратные значки которые будут активные  -->
+          </p>
+          <button type="submit">Войти</button>
         </form>
         <button type="button">Закрити</button>
       </section>
