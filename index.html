@@ -5,24 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Барбершоп "Коваленко"</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/styles1.scc" />
+    <link rel="stylesheet" href="styles/styles1.css" />
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <!--Предворяющее содержимое-->
-      <nav>
-        <a>
+      <nav class="main-navigation">
+        <a class="main-header-logo">
           <img
             src="img/index-logo 1.svg"
-            width="368"
-            height="400"
+            width="371"
+            height="155"
             alt="Логотип
           Барбершопу 'Коваленка'"
           />
         </a>
         <!-- Навигационное меню главная навигация по всему сайту-->
-        <ul>
+        <ul class="site-navigation">
           <!-- верхняя навигационная панель -->
           <li><a href="info.html">Інформація</a></li>
           <li><a href="news.html">Новини</a></li>
@@ -30,39 +36,39 @@
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="contacts.html">Контакти</a></li>
         </ul>
-        <ul>
+        <ul class="user-navigation">
           <!-- Делаем отдельную кнопку выход -->
           <li>
-            <a href="login.html" target="_blank">Вход</a>
+            <a class="logo-link" href="login.html" target="_blank">Вход</a>
             <!-- Для нашей панели навигационной делаем отдельно 
               открывающуюся ссылку для введения логина делая вход на другую страницу login.html-->
           </li>
         </ul>
       </nav>
     </header>
-    <main>
-      <h1>Барбершоп "Коваленко"</h1>
-      <!-- Делаем заголовок но потом его скроем -->
+    <main class="conteiner">
+      <h1 class="visually-hidden">Барбершоп "Коваленко"</h1>
+      <!-- visually-hidden даем класс чтобы скрыть но заголовок нужен для разметки -->
 
-      <section>
-        <h2>Перевагі</h2>
+      <section class="features">
+        <h2 class="visually-hidden">Перевагі</h2>
         <!-- Их нет но мы описываем логику -->
-        <ul>
-          <li>
+        <ul class="features-list">
+          <li class="features-item">
             <h3>Швидко</h3>
             <p>
               Ми робимо свою роботу швидко! Дві години проминуть і ви щасливий
               власник стильної зачіски!
             </p>
           </li>
-          <li>
+          <li class="features-item">
             <h3>Круто</h3>
             <p>
               Забудьте яку стрижку ви носили раніше! Ми з вас зробимо зірку кіно
               або футболу!
             </p>
           </li>
-          <li>
+          <li class="features-item">
             <h3>Дорого</h3>
             <p>
               Наші майстри справжні професіонали і не можуть коштувати дешево!
@@ -72,242 +78,211 @@
         </ul>
       </section>
 
-      <section>
-        <h2>Новини</h2>
-        <ul>
-          <li>
-            <p>
-              Нам завезли дуже круті алкогольні напої і ви зможіте почекати коли
-              звільниться майсте скоштувати їх!!!!
-            </p>
-            <time datetime="2020-07-08">8 липня 2020 року</time>
-          </li>
-          <li>
-            <p>
-              В нашій команді поповнення, Степуренко Сергій, власник титулів та
-              переможець 2019 року в Київі "DIG SIURS Barbershop"
-            </p>
-            <time datetime="2020-07-09">9 липня 2020 року</time>
-          </li>
-        </ul>
-        <a href="news.html">Всі новини</a>
-        <!-- Ставим сылку а не кнопку потому как мы переходим на другую страницу-->
-      </section>
+      <div class="index-columns">
+        <!-- Для того чтобы две секции взять в одну коробочку -->
+        <section class="news">
+          <h2>Новини</h2>
+          <ul class="news-list">
+            <li class="news-item">
+              <p>
+                Нам завезли дуже круті алкогольні напої і ви зможіте почекати
+                коли звільниться майсте скоштувати їх!!!!
+              </p>
+              <time datetime="2020-07-08">8 липня 2020 року</time>
+            </li>
+            <li class="news-item">
+              <p>
+                В нашій команді поповнення, Степуренко Сергій, власник титулів
+                та переможець 2019 року в Київі "DIG SIURS Barbershop"
+              </p>
+              <time datetime="2020-07-09">9 липня 2020 року</time>
+            </li>
+          </ul>
+          <a class="button" href="news.html">Всі новини</a>
+          <!-- Ставим сылку а не кнопку потому как мы переходим на другую страницу-->
+        </section>
 
-      <section>
-        <h2>Фотогалерея</h2>
-        <figure>
-          <!-- Сектор куда добовляют фото, графики -->
-          <a href="#">
-            <img
-              src="img/Layer 21.jpg"
-              width="300"
-              height="200"
-              alt="Зала Барбершоп"
-            />
-          </a>
-          <!-- сделали ссылкой потому что при нажатии на фото будет открываться 
+        <section class="gallery">
+          <h2>Фотогалерея</h2>
+          <figure class="gallery-content">
+            <!-- Сектор куда добовляют фото, графики -->
+            <a href="#">
+              <img
+                src="img/Layer 21.jpg"
+                width="328"
+                height="164"
+                alt="Зала Барбершоп"
+              />
+            </a>
+            <!-- сделали ссылкой потому что при нажатии на фото будет открываться 
             фото на весь экран но пока нет сылки ставим заглушку временно # -->
-        </figure>
-        <button type="button">Назад</button>
-        <button type="button">Вперед</button>
-        <!-- Прописываем кнопки так как это фукция вперед и назад -->
-      </section>
+          </figure>
+          <button
+            class="button gallery-button gallery-button-back"
+            type="button"
+          >
+            Назад
+          </button>
+          <button
+            class="button gallery-button gallery-button-next"
+            type="button"
+          >
+            Вперед
+          </button>
+          <!-- Прописываем кнопки так как это фукция вперед и назад -->
+        </section>
+      </div>
 
-      <section>
-        <h2>Контактна інформація</h2>
-        <p>
-          Барбершоп "Коваленко" <br />
-          Адреса: м.Бориспіль вул. Захисників Вітчізни б. 12 кв. 58 <br />
-          Телефон: +38(050)041-29-01
-        </p>
-        <p>
-          Час работи: <br />
-          пн-пн з 10:00 - 17:00 <br />
-          сб-нд з 12:00 - 17:00
-        </p>
-        <a href="maps.html">Як проїхати</a>
-        <a href="contacts">Обратний зв'язок</a>
-        <!-- Делаем сылками потому как открывается в новом докумнете -->
-      </section>
-
-      <section>
-        <h2>Записатись</h2>
-        <p>
-          Вкажіть будь ласка бажану дату та час запису і ми зв'яжемось з вами
-          для підтвердження бронювання, дякую!!!!
-        </p>
-        <form action="#" method="post">
-          <!-- Добавляем сервак куда будет method="post" отправляться ваша заявка -->
-          <p>Дата <input type="date" name="date" value="2017-10-08" /></p>
-          <p>Час <input type="time" name="time" value="10:00" /></p>
+      <div class="index-columns">
+        <section class="contacts">
+          <h2>Контактна інформація</h2>
           <p>
-            Ваше ім'я
-            <input type="text" name="name" value="" placeholder="Борода" />
+            Барбершоп "Коваленко" <br />
+            Адреса: м.Бориспіль вул. Захисників Вітчізни б. 12 кв. 58 <br />
+            Телефон: +38(050)041-29-01
           </p>
           <p>
-            Телефон
-            <input
-              type="tel"
-              name="phone"
-              value=""
-              placeholder="+3 805 041-29-01"
-            />
+            Час работи: <br />
+            пн-пн з 10:00 - 17:00 <br />
+            сб-нд з 12:00 - 17:00
           </p>
-          <button type="submit">Відправити</button>
-        </form>
-        <!-- Добавлена офрма для заполненения и для обратной связи -->
-      </section>
+          <a class="button" href="maps.html">Як проїхати</a>
+          <a class="button" href="contacts">Обратний зв'язок</a>
+          <!-- Делаем сылками потому как открывается в новом докумнете -->
+        </section>
+
+        <section class="appointment">
+          <h2>Записатись</h2>
+          <p class="appointment-info">
+            Вкажіть будь ласка бажану дату та час запису і ми зв'яжемось з вами
+            для підтвердження бронювання, дякую!!!!
+          </p>
+          <form class="appointment-form" action="#" method="post">
+            <!-- Добавляем сервак куда будет method="post" отправляться ваша заявка -->
+            <p class="appointment-item">
+              <label for="appointment-data">Дата</label>
+              <input
+                id="appointment-data"
+                type="text"
+                name="date"
+                value=""
+                placeholder="08.10.2022"
+              />
+            </p>
+
+            <p class="appointment-item">
+              <label for="appointment-time">Час</label>
+              <input
+                id="appointment-time"
+                type="text"
+                name="time"
+                value=""
+                placeholder="10:00"
+              />
+            </p>
+            <p class="appointment-item">
+              <label for="appointment-name">Ваше ім'я</label>
+              <input
+                id="appointment-name"
+                type="text"
+                name="name"
+                value=""
+                placeholder="Миколай"
+              />
+            </p>
+            <p class="appointment-item">
+              <label for="appointment-telephone">Телефон</label>
+              <input
+                id="appointment-telephone"
+                type="text"
+                name="telephone"
+                value=""
+                placeholder="+3 8050 777-77-77"
+              />
+            </p>
+            <button type="submit">Відправити</button>
+          </form>
+          <!-- Добавлена офрма для заполненения и для обратной связи -->
+        </section>
+      </div>
     </main>
 
-    <footer>
+    <footer class="main-footer">
       <!-- Тег который находиться в самом низу сайта который содержит 
         дополнительну, завершающую, уточняющую тнформацию-->
-      <p>
+      <p class="footer-contacts">
         Барбершоп "Коваленко" <br />
         Адреса: м.Бориспіль вул. Захисників Вітчізни б. 12 кв. 58 <br />
         <a href="maps.html">Як нас знайти?</a> <br />
         Телефон: +38(050)041-29-01
       </p>
-      <div>
+      <div class="footer-social">
         <!-- Делается для отдельной коробочки -->
         <p>Давайте дружити!</p>
         <ul>
-          <li><a href="#">Telegram</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Instagram</a></li>
+          <li><a class="social-button" href="#">Telegram</a></li>
+          <li><a class="social-button" href="#">Facebook</a></li>
+          <li><a class="social-button" href="#">Instagram</a></li>
         </ul>
       </div>
-      <p>
-        Розроблено:
-        <a href="https://resonant-alpaca-4428ef.netlify.app"
+      <p class="footer-copyright">
+        <b>Розроблено:</b>
+        <a
+          class="button"
+          href="https://resonant-alpaca-4428ef.netlify.app"
+          target="_blank"
           >Kovalenko Volodimir</a
         >
       </p>
     </footer>
 
-    <section>
-      <!-- Скрытый слой - форма входа и карта -->
+    <section class="modal modal-login">
       <h2>Особистий кабінет</h2>
-      <form
-        class="user"
-        method="post"
-        action="https://developer.mozilla.org/ru/docs/Web/HTML/Element/ul"
-      >
+      <p>Введіть свій логін або пароль</p>
+      <form class="login-form" action="#" method="post">
         <!-- Форма где будут собираться данные, данные будут отправляться по адрессу который мы указали  method="post отправляет
         данные в закрытом виде есть еще метод  get отправляет данные в открытом виде-->
         <p>
-          <label for="user-login">Логин</label>
-          <input id="user-login" type="text" name="login" placeholder="Логин" />
-        </p>
-        <p>
-          <label for="user-password">Пароль</label>
+          <label class="visually-hidden" for="user-login">Логин</label>
           <input
-            id="user-password"
-            type="password"
-            name="password"
-            placeholder="Пароль"
+            class="login-icon-user"
+            id="user-login"
+            type="text"
+            name="login"
+            placeholder="email@bigboss.com"
           />
         </p>
         <p>
-          <label>
-            <input type="checkbox" name="remember" />
+          <label class="visually-hidden" for="user-password">Пароль</label>
+          <input
+            class="login-icon-password"
+            id="user-password"
+            type="password"
+            name="password"
+            placeholder="********"
+          />
+        </p>
+        <p class="login-password-info">
+          <label class="login-checkbox">
+            <input type="checkbox" name="remember" class="" />
+            <span class="checkbox-indicator"></span>
             Запомни меня
           </label>
+          <a class="restore" href="#">Я забув пароль!</a>
         </p>
-        <button type="submit">Войти</button>
+        <button class="button" type="submit">Войти</button>
         <!-- кнопка button с типом submit это кнопка которая оправляет заполненую форму -->
       </form>
+      <button class="model-close" type="button">Закрити</button>
     </section>
 
-    <section>
-      <!-- Скрытый слой -->
-      <h2>Як до нас добратися!</h2>
-      <img src="img/maps.png" width="400" height="400" alt="go to maps" />
-      <button type="button">Закрити</button>
+    <section class="model model-map">
+      <h2 class="">Як до нас добратися!</h2>
+      <p>
+        <img src="img/maps.png" width="400" height="400" alt="go to maps" />
+      </p>
+      <button class="model-close" type="button">Закрити</button>
       <!-- button форма отправки данных -->
     </section>
-
-    <!-- Создаем каталог -->
-    <section>
-      <h1>Каталог</h1>
-      <form action="filter" method="get" action="#">
-        <fieldset>
-          <!-- Поля границы -->
-          <legend>Випробник:</legend>
-          <!-- Для тега fieldset тег legend который добовляет заголовок,
-          если несколько полей следует заворачивать каждый в fieldset с заголовком legend -->
-          <ul>
-            <li>
-              <input
-                type="checkbox"
-                name="baxter-of-california"
-                id="filter-baxter-of-california"
-                checked
-              />
-              <!-- input
-                type="checkbox" квадратные кнопки и выбираем несколько вариантов-->
-              <label for="filter-baxter-of-califonia"
-                >Baxter of California</label
-              >
-            </li>
-            <li>
-              <input type="checkbox" name="mr-natty" id="filter-mr-natty" />
-              <label for="filter-mr-natty">Mr Natty</label>
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                name="suavecito"
-                id="filter-suavecito"
-                checked
-              />
-              <!-- checked это выбор компонента после перезагрузки страницы
-             остается на том же элементе котроый мы задали  -->
-              <label for="filter-suavecito">Suavecito</label>
-            </li>
-          </ul>
-        </fieldset>
-
-        <fieldset>
-          <legend>Групи товарів</legend>
-          <ul>
-            <li>
-              <input
-                type="radio"
-                name="product-group"
-                value="shaving"
-                id="filter-shave"
-              />
-              <!-- input
-                type="radio" круглые кнопки и свойства выюрать только одну кнопку если имя одно и тоже как в input
-                type="radio" тогда нужно создавать value="" где в кавычка мы вписываем его индивидуальное имя, послеё
-                того как на сервер прийдет заказмы будем его различать именно по value="" где будет вписано индивидуальное имя-->
-              <label for="filter-shave">Приблуди для бриття</label>
-            </li>
-            <li>
-              <input
-                type="radio"
-                name="product-group"
-                value="hair-care"
-                id="filter-care"
-                checked
-              />
-              <label for="filter-care">Засоби для догляду</label>
-            </li>
-            <li>
-              <input
-                type="radio"
-                name="product-group"
-                value="accessories"
-                id="filter-accessories"
-              />
-              <label for="filter-accessories">Аксесуари</label>
-            </li>
-          </ul>
-        </fieldset>
-      </form>
-    </section>
-    <button type="submit">Показати</button>
   </body>
 </html>
