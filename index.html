@@ -1,288 +1,168 @@
 <!DOCTYPE html>
-<html lang="en-uk">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Барбершоп "Коваленко"</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/styles1.css" />
+    <title>Barber Shop Borodiski</title>
   </head>
   <body>
-    <header class="main-header">
-      <!--Предворяющее содержимое-->
-      <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img
-            src="img/index-logo 1.svg"
-            width="371"
-            height="155"
-            alt="Логотип
-          Барбершопу 'Коваленка'"
-          />
-        </a>
-        <!-- Навигационное меню главная навигация по всему сайту-->
-        <ul class="site-navigation">
-          <!-- верхняя навигационная панель -->
-          <li><a href="info.html">Інформація</a></li>
-          <li><a href="news.html">Новини</a></li>
-          <li><a href="price.html">Цінова пропозиція</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="contacts.html">Контакти</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <!-- Делаем отдельную кнопку выход -->
-          <li>
-            <a class="logo-link" href="login.html" target="_blank">Вход</a>
-            <!-- Для нашей панели навигационной делаем отдельно 
-              открывающуюся ссылку для введения логина делая вход на другую страницу login.html-->
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="conteiner">
-      <h1 class="visually-hidden">Барбершоп "Коваленко"</h1>
-      <!-- visually-hidden даем класс чтобы скрыть но заголовок нужен для разметки -->
+    <header></header>
+    <nav>
+      <ul>
+        <li><a href="./index.html">ИНФОРМАЦИЯ</a></li>
+        <li><a href="">НОВОСТИ</a></li>
+        <li><a href="">ПРАЙС-ЛИСТ</a></li>
+        <li><a href="">МАГАЗИН</a></li>
+        <li><a href="">КОНТАКТЫ</a></li>
+      </ul>
+    </nav>
+    <a href="">ВХОД</a>
 
-      <section class="features">
-        <h2 class="visually-hidden">Перевагі</h2>
-        <!-- Их нет но мы описываем логику -->
-        <ul class="features-list">
-          <li class="features-item">
-            <h3>Швидко</h3>
+    <main>
+      <!-- Hero -->
+      <section>
+        <h1>Borodinski</h1>
+        <!-- Потом скроем -->
+        <img src="./img/index-logo.svg" alt="" />
+        <ul>
+          <li>
+            <h2>БЫСТРО</h2>
+            <!-- Стделать ромб  32 на 31-->
             <p>
-              Ми робимо свою роботу швидко! Дві години проминуть і ви щасливий
-              власник стильної зачіски!
+              МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ —
+              СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!
             </p>
           </li>
-          <li class="features-item">
-            <h3>Круто</h3>
+          <li>
+            <h2>КРУТО</h2>
+            <!-- Стделать ромб  32 на 31-->
             <p>
-              Забудьте яку стрижку ви носили раніше! Ми з вас зробимо зірку кіно
-              або футболу!
+              ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА
+              ИЛИ КИНО!ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.
             </p>
           </li>
-          <li class="features-item">
-            <h3>Дорого</h3>
+          <li>
+            <h2>ДОРОГО</h2>
+            <!-- Стделать ромб  32 на 31-->
             <p>
-              Наші майстри справжні професіонали і не можуть коштувати дешево!
-              Хіба достойна ціна не робить вас бильш статним?
+              НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО.
+              К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕННЫЙ СТАТУС?
             </p>
           </li>
         </ul>
       </section>
 
-      <div class="index-columns">
-        <!-- Для того чтобы две секции взять в одну коробочку -->
-        <section class="news">
-          <h2>Новини</h2>
-          <ul class="news-list">
-            <li class="news-item">
-              <p>
-                Нам завезли дуже круті алкогольні напої і ви зможіте почекати
-                коли звільниться майсте скоштувати їх!!!!
-              </p>
-              <time datetime="2020-07-08">8 липня 2020 року</time>
-            </li>
-            <li class="news-item">
-              <p>
-                В нашій команді поповнення, Степуренко Сергій, власник титулів
-                та переможець 2019 року в Київі "DIG SIURS Barbershop"
-              </p>
-              <time datetime="2020-07-09">9 липня 2020 року</time>
-            </li>
-          </ul>
-          <a class="button" href="news.html">Всі новини</a>
-          <!-- Ставим сылку а не кнопку потому как мы переходим на другую страницу-->
-        </section>
-
-        <section class="gallery">
-          <h2>Фотогалерея</h2>
-          <figure class="gallery-content">
-            <!-- Сектор куда добовляют фото, графики -->
-            <a href="#">
-              <img
-                src="img/Layer 21.jpg"
-                width="328"
-                height="164"
-                alt="Зала Барбершоп"
-              />
-            </a>
-            <!-- сделали ссылкой потому что при нажатии на фото будет открываться 
-            фото на весь экран но пока нет сылки ставим заглушку временно # -->
-          </figure>
-          <button
-            class="button gallery-button gallery-button-back"
-            type="button"
-          >
-            Назад
-          </button>
-          <button
-            class="button gallery-button gallery-button-next"
-            type="button"
-          >
-            Вперед
-          </button>
-          <!-- Прописываем кнопки так как это фукция вперед и назад -->
-        </section>
-      </div>
-
-      <div class="index-columns">
-        <section class="contacts">
-          <h2>Контактна інформація</h2>
-          <p>
-            Барбершоп "Коваленко" <br />
-            Адреса: м.Бориспіль вул. Захисників Вітчізни б. 12 кв. 58 <br />
-            Телефон: +38(050)041-29-01
-          </p>
-          <p>
-            Час работи: <br />
-            пн-пн з 10:00 - 17:00 <br />
-            сб-нд з 12:00 - 17:00
-          </p>
-          <a class="button" href="maps.html">Як проїхати</a>
-          <a class="button" href="contacts">Обратний зв'язок</a>
-          <!-- Делаем сылками потому как открывается в новом докумнете -->
-        </section>
-
-        <section class="appointment">
-          <h2>Записатись</h2>
-          <p class="appointment-info">
-            Вкажіть будь ласка бажану дату та час запису і ми зв'яжемось з вами
-            для підтвердження бронювання, дякую!!!!
-          </p>
-          <form class="appointment-form" action="#" method="post">
-            <!-- Добавляем сервак куда будет method="post" отправляться ваша заявка -->
-            <p class="appointment-item">
-              <label for="appointment-data">Дата</label>
-              <input
-                id="appointment-data"
-                type="text"
-                name="date"
-                value=""
-                placeholder="08.10.2022"
-              />
+      <!-- News -->
+      <section>
+        <h2>НОВОСТИ</h2>
+        <ul>
+          <li>
+            <p>
+              НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ
+              СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ
             </p>
+            <p><time datetime="2022-01-11">11 января</time></p>
+          </li>
+          <li>
+            <p>
+              В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ
+              МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ
+            </p>
+            <p><time datetime="2022-01-18">18 января</time></p>
+          </li>
+          <li><a href="">ВСЕ НОВОСТИ</a></li>
+        </ul>
+      </section>
 
-            <p class="appointment-item">
-              <label for="appointment-time">Час</label>
-              <input
-                id="appointment-time"
-                type="text"
-                name="time"
-                value=""
-                placeholder="10:00"
-              />
-            </p>
-            <p class="appointment-item">
-              <label for="appointment-name">Ваше ім'я</label>
-              <input
-                id="appointment-name"
-                type="text"
-                name="name"
-                value=""
-                placeholder="Миколай"
-              />
-            </p>
-            <p class="appointment-item">
-              <label for="appointment-telephone">Телефон</label>
-              <input
-                id="appointment-telephone"
-                type="text"
-                name="telephone"
-                value=""
-                placeholder="+3 8050 777-77-77"
-              />
-            </p>
-            <button type="submit">Відправити</button>
-          </form>
-          <!-- Добавлена офрма для заполненения и для обратной связи -->
-        </section>
-      </div>
+      <!-- Photo gallery -->
+      <section>
+        <h2>ФОТОГАЛЕРЕЯ</h2>
+        <ul>
+          <li>
+            <img
+              src="./img/photogalery.jpg"
+              alt="photo hole"
+              width="328"
+              height="164"
+            />
+          </li>
+          <li><button type="button">НАЗАД</button></li>
+          <li><button type="button">ВПЕРЕД</button></li>
+        </ul>
+      </section>
+
+      <!-- Information -->
+      <section>
+        <h2>КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+        <address>
+          БАРБЕРШОП «БОРОДИНСКИЙ» <br />АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б.
+          КОНЮШЕННАЯ, Д. 19/8 <br />ТЕЛЕФОН: +7 (495) 666-02-66
+        </address>
+        <p>
+          ВРЕМЯ РАБОТЫ: <br />ПН—ПТ: С 10:00 ДО 22:00 <br />СБ—ВС: С 10:00 ДО
+          19:00
+        </p>
+        <a href="">КАК ПРОЕХАТЬ</a>
+        <a href="">ОБРАТНАЯ СВЯЗЬ</a>
+      </section>
+
+      <!-- Recording -->
+      <section>
+        <h2>ЗАПИСАТЬСЯ</h2>
+        <p>
+          УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ
+          БРОНИ
+        </p>
+        <form>
+          <label
+            >ДАТА
+            <input name="date" type="text" placeholder="08.10.2022" />
+          </label>
+          <label
+            >ВАШЕ ИМЯ
+            <input name="name" type="text" placeholder="Володими" />
+          </label>
+          <label
+            >ВРЕМЯ
+            <input name="time" type="datetime" placeholder="10:00" />
+          </label>
+          <label
+            >ТЕЛЕФОН
+            <input name="tel" type="tel" placeholder="+38-050-77-77-77" />
+          </label>
+          <button type="submit">ОТПРАВИТЬ</button>
+        </form>
+      </section>
     </main>
 
-    <footer class="main-footer">
-      <!-- Тег который находиться в самом низу сайта который содержит 
-        дополнительну, завершающую, уточняющую тнформацию-->
-      <p class="footer-contacts">
-        Барбершоп "Коваленко" <br />
-        Адреса: м.Бориспіль вул. Захисників Вітчізни б. 12 кв. 58 <br />
-        <a href="maps.html">Як нас знайти?</a> <br />
-        Телефон: +38(050)041-29-01
-      </p>
-      <div class="footer-social">
-        <!-- Делается для отдельной коробочки -->
-        <p>Давайте дружити!</p>
+    <!-- Footer -->
+    <footer>
+      <section>
+        <address>
+          БАРБЕРШОП «БОРОДИНСКИЙ» <br />
+          АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8 <br />КАК НАС
+          НАЙТИ? <br />ТЕЛЕФОН: +7 (495) 666-02-66
+        </address>
+        <p>ДАВАЙТЕ ДРУЖИТЬ!</p>
         <ul>
-          <li><a class="social-button" href="#">Telegram</a></li>
-          <li><a class="social-button" href="#">Facebook</a></li>
-          <li><a class="social-button" href="#">Instagram</a></li>
+          <li>
+            <a href="">VK<img src="./img/vk.svg" alt="icon VK" /></a>
+          </li>
+          <li>
+            <a href=""
+              >FB<img src="./img/facebook.svg" alt="icon facebook"
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              >IN<img src="./img/instagram.svg" alt="icon instagram"
+            /></a>
+          </li>
         </ul>
-      </div>
-      <p class="footer-copyright">
-        <b>Розроблено:</b>
-        <a
-          class="button"
-          href="https://resonant-alpaca-4428ef.netlify.app"
-          target="_blank"
-          >Kovalenko Volodimir</a
-        >
-      </p>
+        <p>РАЗРАБОТАНО</p>
+        <a href="mailto:dante77758@gmail.com">Володимир Коваленко</a>
+      </section>
     </footer>
-
-    <section class="modal modal-login">
-      <h2>Особистий кабінет</h2>
-      <p>Введіть свій логін або пароль</p>
-      <form class="login-form" action="#" method="post">
-        <!-- Форма где будут собираться данные, данные будут отправляться по адрессу который мы указали  method="post отправляет
-        данные в закрытом виде есть еще метод  get отправляет данные в открытом виде-->
-        <p>
-          <label class="visually-hidden" for="user-login">Логин</label>
-          <input
-            class="login-icon-user"
-            id="user-login"
-            type="text"
-            name="login"
-            placeholder="email@bigboss.com"
-          />
-        </p>
-        <p>
-          <label class="visually-hidden" for="user-password">Пароль</label>
-          <input
-            class="login-icon-password"
-            id="user-password"
-            type="password"
-            name="password"
-            placeholder="********"
-          />
-        </p>
-        <p class="login-password-info">
-          <label class="login-checkbox">
-            <input type="checkbox" name="remember" class="" />
-            <span class="checkbox-indicator"></span>
-            Запомни мене
-          </label>
-          <a class="restore" href="#">Я забув пароль!</a>
-        </p>
-        <button class="button" type="submit">Войти</button>
-        <!-- кнопка button с типом submit это кнопка которая оправляет заполненую форму -->
-      </form>
-      <button class="model-close" type="button">Закрити</button>
-    </section>
-
-    <section class="model model-map">
-      <h2 class="">Як до нас добратися!</h2>
-      <p>
-        <img src="img/maps.png" width="400" height="400" alt="go to maps" />
-      </p>
-      <button class="model-close" type="button">Закрити</button>
-      <!-- button форма отправки данных -->
-    </section>
   </body>
 </html>
